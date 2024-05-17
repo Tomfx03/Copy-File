@@ -1,54 +1,37 @@
 # Copy-File
-
 ## AIM:
-
 To write a python program for copying the contents from one file to another file.
-
-## EQUIPEMENT'S REQUIRED:
-
+## EQUIPEMENT'S REQUIRED: 
 PC
 Anaconda - Python 3.7
-
-## ALGORITHM:
-
-### Step 1:
-
-Load the CSV into a DataFrame.
-
-### Step 2:
-
-Print the number of contents to be displayed using df.head().
-
-### Step 3:
-
-The number of rows returned is defined in Pandas option settings.
-
-### Step 4:
-
-Check your system's maximum column with the pd.options.display.max_column statement.
-
-### Step 5:
-
-Increase the maximum number of rows to display the entire DataFrame.
-
+## ALGORITHM: 
+1. Get the file name and location from the user.
+2.Give a new file name to create a copy of a file content.
+3.Read the file and close the file.
+4.Now write the content in the new file.
+5.When done print "File copied sucessfully"
+6.End of the program.
 ## PROGRAM:
-
-```python
-# To write a python program for reading content from a CSV file.
-# Developed by: TOM FRANCIES XAVIOUR L
-# Register Number: 212223110060
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
+```
+Developed BY TOM FRANCIES XAVIOUR L
+Reg No: 212223110060
+print("Enter the name of source file:")
+sFile=input()
+print("Enter the name of target file:")
+tFile=input()
+fileHandle=open(sFile,"r")
+texts=fileHandle.readlines()
+fileHandle.close()
+fileHandle=open(tFile,"w")
+for s in texts:
+fileHandle.write(s)
+fileHandle.close()
+print("\nFile Copied Successfully!")
 ```
 
 ### OUTPUT:
+![alt text](image.png)
 
-![output](OUTPUT.png)
 
 ## RESULT:
-
 Thus the program is written to copy the contents from one file to another file.
