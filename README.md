@@ -30,7 +30,7 @@ print("\nFile Copied Successfully!")
 ```
 
 ### OUTPUT:
-![alt text](image.png)
+![Screenshot 2024-05-17 091130](https://github.com/Tomfx03/Copy-File/assets/101335832/ddee3174-688c-4183-babe-530af553fc4e)
 
 
 ## RESULT:
