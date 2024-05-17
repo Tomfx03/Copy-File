@@ -5,12 +5,14 @@ To write a python program for copying the contents from one file to another file
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
+```
 1. Get the file name and location from the user.
 2.Give a new file name to create a copy of a file content.
 3.Read the file and close the file.
 4.Now write the content in the new file.
 5.When done print "File copied sucessfully"
 6.End of the program.
+```
 ## PROGRAM:
 ```
 Developed BY TOM FRANCIES XAVIOUR L
